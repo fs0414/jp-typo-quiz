@@ -1,7 +1,9 @@
 services:
   fresh-app:
     container_name: app
-    build: .
+    build:
+      context: .
+      dockerfile: Dockerfile
     ports:
       - "8000:8000"
     volumes:
@@ -9,4 +11,3 @@ services:
       - /app/node_modules
     environment:
       - DENO_DEPLOYMENT_ID=development
-    command: deno task start

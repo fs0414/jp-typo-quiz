@@ -13,6 +13,9 @@ COPY . .
 # Cache dependencies
 RUN deno cache main.ts
 
+# Build the application
+RUN deno task build
+
 # Expose port
 EXPOSE 8000
 
