@@ -1,0 +1,12 @@
+services:
+  fresh-app:
+    container_name: app
+    build: .
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/app
+      - /app/node_modules
+    environment:
+      - DENO_DEPLOYMENT_ID=development
+    command: deno task start
