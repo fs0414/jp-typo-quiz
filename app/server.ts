@@ -11,14 +11,13 @@ app.use('/assets/*', serveStatic({ root: './dist' }))
 // Routes
 app.get('/', (c) => {
   const typoQuizzes = [
-    { id: 1, typo: "エオbgいrhのび", correct: "ruby", category: "プログラミング言語", difficulty: "初級" },
-    { id: 2, typo: "ぱとん", correct: "python", category: "プログラミング言語", difficulty: "初級" },
-    { id: 4, typo: "こんそぇ", correct: "console", category: "プログラミング", difficulty: "初級" },
-    { id: 5, typo: "れあct", correct: "react", category: "フレームワーク", difficulty: "初級" },
-    { id: 6, typo: "tyぺ", correct: "type", category: "プログラミング", difficulty: "初級" },
-    { id: 7, typo: "cぁss", correct: "class", category: "プログラミング", difficulty: "初級" },
-    { id: 8, typo: "いんぽrt", correct: "import", category: "プログラミング", difficulty: "初級" },
-    { id: 9, typo: "ありゃy", correct: "array", category: "プログラミング", difficulty: "中級" },
+    { id: 1, typo: "るby", correct: "ruby" },
+    { id: 2, typo: "ぱとん", correct: "python" },
+    { id: 3, typo: "こんそぇ", correct: "console" },
+    { id: 4, typo: "れあct", correct: "react" },
+    { id: 5, typo: "tyぺ", correct: "type" },
+    { id: 6, typo: "cぁss", correct: "class" },
+    { id: 7, typo: "ありゃy", correct: "array" },
   ];
 
   return c.html(QuizPage({ quizzes: typoQuizzes }))
