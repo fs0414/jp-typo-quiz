@@ -23,6 +23,13 @@ async function initQuizData() {
     { id: 5, typo: "tyぺ", correct: "type" },
     { id: 6, typo: "cぁss", correct: "class" },
     { id: 7, typo: "ありゃy", correct: "array" },
+    { id: 8, typo: "pyてょん", correct: "python" },
+    { id: 9, typo: "ゔえ", correct: "vue" },
+    { id: 10, typo: "ぺrpぇぃty", correct: "perplexity" },
+    { id: 11, typo: "せrゔぇr", correct: "server" },
+    { id: 12, typo: "での", correct: "deno" },
+    { id: 13, typo: "ぉcあlほst", correct: "localhost" },
+    { id: 14, typo: "らいls", correct: "rails" },
   ];
   
   // Store each quiz and the count
