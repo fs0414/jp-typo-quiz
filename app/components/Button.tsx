@@ -1,9 +1,9 @@
-import type { ComponentChildren } from "preact";
+import type { ReactNode } from "react";
 
 export interface ButtonProps {
   id?: string;
   onClick?: () => void;
-  children?: ComponentChildren;
+  children?: ReactNode;
   disabled?: boolean;
 }
 

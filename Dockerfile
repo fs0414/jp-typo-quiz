@@ -11,7 +11,7 @@ COPY deno.lock* ./
 COPY . .
 
 # Cache dependencies
-RUN deno cache main.ts
+RUN deno cache app/server.ts
 
 # Build the application
 RUN deno task build
