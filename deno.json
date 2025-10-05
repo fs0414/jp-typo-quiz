@@ -38,8 +38,8 @@
       "dom.iterable",
       "deno.ns"
     ],
-    "jsx": "react-jsx",
-    "jsxImportSource": "react",
+    "jsx": "precompile",
+    "jsxImportSource": "hono/jsx",
     "jsxPrecompileSkipElements": [
       "a",
       "img",
