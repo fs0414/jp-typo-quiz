@@ -3,14 +3,11 @@ import { Layout } from '../components/Layout.tsx'
 import { Header } from '../components/Header.tsx'
 import { QuizCard } from '../components/QuizCard.tsx'
 import { QuizModal } from '../components/QuizModal.tsx'
-import { QuizScript } from '../components/QuizScript.tsx'
 
 interface TypoQuiz {
   id: number
   typo: string
   correct: string
-  category: string
-  difficulty: string
 }
 
 interface QuizPageProps {
@@ -29,7 +26,7 @@ export const QuizPage = ({quizzes}: QuizPageProps) => {
         </div>
       </main>
       <QuizModal />
-      <QuizScript />
+      <script src="/static/quiz.js"></script>
     </Layout>
   )
 }

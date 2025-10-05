@@ -10,5 +10,11 @@ export default defineConfig({
       }
     }), 
     tailwindcss()
-  ]
+  ],
+  build: {
+    manifest: true,
+    rollupOptions: {
+      external: ['hono/jsx']
+    }
+  }
 });

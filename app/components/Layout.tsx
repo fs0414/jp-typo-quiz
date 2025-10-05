@@ -18,6 +18,7 @@ export const Layout = ({ title, children }: LayoutProps) => {
         <div class="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100">
           {children}
         </div>
+        <script type="module" src="/assets/index-BvBOXbJq.js"></script>
       </body>
     </html>
   )

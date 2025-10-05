@@ -4,9 +4,11 @@ import { QuizPage } from './pages/QuizPage.tsx'
 
 const app = new Hono()
 
-// Static files
-app.use('/static/*', serveStatic({ root: './' }))
+// HonoX renderer middleware
+
+// HonoX static files (built assets)
 app.use('/assets/*', serveStatic({ root: './dist' }))
+app.use('/static/*', serveStatic({ root: './' }))
 
 // Routes
 app.get('/', (c) => {
@@ -20,7 +22,7 @@ app.get('/', (c) => {
     { id: 7, typo: "ありゃy", correct: "array" },
   ];
 
-  return c.html(QuizPage({ quizzes: typoQuizzes }))
+  return c.render(QuizPage({ quizzes: typoQuizzes }))
 })
 
 // API Routes
